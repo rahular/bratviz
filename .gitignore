@@ -1,5 +1,7 @@
 # project specific files
+.vscode
 brat
+visualizations
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
