@@ -24,7 +24,7 @@ optional arguments:
 To visualize the first 100 sentences from a `.conll` file
 
 ```
-python run.py -f ~/Desktop/datasets/ontonotes/dev.english.v4_gold_conll -n 100
+python run.py -f dev.english.v4_gold_conll -n 100
 ```
 
 ## Parsing files
