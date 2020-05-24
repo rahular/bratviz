@@ -17,6 +17,13 @@ def init_args():
         help="Path to the file to visualize.",
         type=str,
     )
+    parser.add_argument(
+        "-n",
+        "--num_sent",
+        required=False,
+        help="Number of sentences to parse",
+        type=int,
+    )
     return parser.parse_args()
 
 
@@ -52,8 +59,7 @@ def main():
             .replace("$$BRAT_PATH$$", BRAT_PATH)
         )
         write_viz(viz, idx)
-        # write the first 100 sentences
-        if idx == 100:
+        if args.num_sent and args.num_sent == idx:
             break
     write_index(index_template, href_list)
 
