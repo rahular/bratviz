@@ -30,7 +30,7 @@ python run.py -f dev.english.v4_gold_conll -n 100
 ## Parsing files
 
 Every `Reader` class is expected to have a `read` method which returns 3 things:
-- `text`: text to visualie (usually a sentence). 
+- `text`: text to visualize (usually a sentence). 
 - `ents`: a list of constituents/mentions. It should have the following format
 ```
 [
