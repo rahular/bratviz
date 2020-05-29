@@ -1,6 +1,7 @@
 # project specific files
 .vscode
 brat
+data
 visualizations
 
 # Byte-compiled / optimized / DLL files
